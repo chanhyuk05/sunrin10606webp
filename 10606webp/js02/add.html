@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>덧셈 계산기</title>
+    <script>
+        function calc() {
+            let x = parseInt(document.getElementById('x').value);
+            let y = parseInt(document.getElementById('y').value);
+
+            document.getElementById('sum').value = x + y;
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" action="#" method="POST">
+        첫번째 정수: <input type="" id="x" /><br />
+        두번째 정수: <input type="" id="y" /><br />
+        합계: <input type="text" id="sum" readonly /><br />
+        <input type="button" value="계산" onclick="calc();" />
+    </form>
+</body>
+</html>
