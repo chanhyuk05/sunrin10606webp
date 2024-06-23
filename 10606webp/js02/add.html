@@ -6,16 +6,14 @@
     <title>덧셈 계산기</title>
     <script>
         function calc() {
-            let x = parseInt(document.getElementById('x').value);
-
+            let x = document.getElementById('x').value;
             document.getElementById('sum').value = eval(x);
         }
     </script>
 </head>
 <body>
     <form name="myform" action="#" method="POST">
-        첫번째 정수: <input type="" id="x" /><br />
-
+        식 입력: <input type="" id="x" /><br />
         합계: <input type="text" id="sum" readonly /><br />
         <input type="button" value="계산" onclick="calc();" />
     </form>
