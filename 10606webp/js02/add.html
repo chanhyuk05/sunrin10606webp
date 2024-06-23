@@ -7,16 +7,15 @@
     <script>
         function calc() {
             let x = parseInt(document.getElementById('x').value);
-            let y = parseInt(document.getElementById('y').value);
 
-            document.getElementById('sum').value = x + y;
+            document.getElementById('sum').value = eval(x);
         }
     </script>
 </head>
 <body>
     <form name="myform" action="#" method="POST">
         첫번째 정수: <input type="" id="x" /><br />
-        두번째 정수: <input type="" id="y" /><br />
+
         합계: <input type="text" id="sum" readonly /><br />
         <input type="button" value="계산" onclick="calc();" />
     </form>
